@@ -5,7 +5,7 @@
  */
 
 var twoSum = function(nums, target) {
-    const list = {}
+    const list={}
     for(let i=0; i<nums.length; i++){
         list[target-nums[i]] = i
         if(nums[i+1] in list) return [list[nums[i+1]], i+1]

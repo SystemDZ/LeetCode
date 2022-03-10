@@ -17,5 +17,5 @@ var searchInsert = function(nums, target) {
     while(i < nums.length)
         if(target <= nums[i]) return i
         else i++
-    return nums.length
+    return i
 };

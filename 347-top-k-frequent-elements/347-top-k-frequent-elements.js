@@ -6,16 +6,10 @@
 var topKFrequent = function(nums, k) {
     let hash = {}
     let output = []
-    for(let n of nums){
-        hash[n] = hash[n] ? hash[n] + 1 : 1
-    }
-
+    for(let n of nums) hash[n] = hash[n] ? hash[n] + 1 : 1
     let sortedArray = Object.entries(hash).sort((a,b)=>b[1]-a[1])
-    console.log(sortedArray)
-    for (let i=0; i<k; i++) {
-        output.push(sortedArray[i][0])
-    }
-    return output    
+    for(let i=0; i<k; i++) output.push(sortedArray[i][0])
+    return output
 };
 
 

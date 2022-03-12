@@ -4,48 +4,6 @@
  * @return {number[]}
  */
 var topKFrequent = function(nums, k) { // Time O(2n + k) = O(n+k)
-    let hash = {}
-    let output = []
-    for(let n of nums) hash[n] = hash[n] ? hash[n] + 1 : 1
-    
-    let sortedArray = Object.entries(hash).sort((b,a)=>a[1]-b[1])
-    for(let i=0; i<k; i++) output.push(sortedArray[i][0])
-    
-    return output
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    /*
     // Hash Table to add frequent numbers
     let hash = {} // Space O(n)
     // output
@@ -56,11 +14,7 @@ var topKFrequent = function(nums, k) { // Time O(2n + k) = O(n+k)
     let sortedArray = Object.entries(hash).sort((a,b)=>b[1]-a[1]) // Time O(n) -  Space O(n)
     // add max values less then key
     for(let i=0; i<k; i++) output.push(sortedArray[i][0]) // Time O(k)
-    
-    
     return output
-    
-    */
 };
 
 

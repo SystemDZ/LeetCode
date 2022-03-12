@@ -7,7 +7,7 @@ var topKFrequent = function(nums, k) { // Time O(2n + k) = O(n+k)
     // Hash Table to add frequent numbers
     let hash = {} // Space O(n)
     // output
-    let output = []
+    let output = [] // Space O(k)
     // fill up our hash table with numbers frequency
     for(let n of nums) hash[n] = hash[n] ? hash[n] + 1 : 1 // Time O(n)
     // Sort our Hash table based on numbers frequency big to small
